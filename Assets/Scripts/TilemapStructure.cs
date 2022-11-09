@@ -124,6 +124,7 @@ public class TilemapStructure : MonoBehaviour
                 Grid.GetTileCache().TryGetValue(typeOfTile, out TileBase tile); // Default return null if not found
                 tilesArray[x * width + y] = tile;
 
+                _graphicMap.SetTile(new Vector3Int(x, y), tile);
                 // Custom logic
                 AdjustTile(GetTile(x, y), positionsArray);
             }
@@ -131,8 +132,8 @@ public class TilemapStructure : MonoBehaviour
 
         // Clear all dirty coordinates
         _dirtyCoords.Clear();
-        _graphicMap.SetTiles(positionsArray, tilesArray);
-        _graphicMap.RefreshAllTiles();
+        //_graphicMap.SetTiles(positionsArray, tilesArray);
+        //_graphicMap.RefreshAllTiles();
     }
 
     private void AdjustTile(CustomTile tile, Vector3Int[] positionsArray)
@@ -141,6 +142,7 @@ public class TilemapStructure : MonoBehaviour
         if (config == null) return;
         if (config.randomTransform)
         {
+
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
             var randomPosition = TilemapHelper.RandomVector3(config.minPosition, config.maxPosition);
             var randomScale = TilemapHelper.RandomScaleVector3(config.minScale, config.maxScale);
