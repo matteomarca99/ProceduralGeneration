@@ -148,7 +148,7 @@ public class TilemapStructure : MonoBehaviour
             // Update cell in underlying grid
             tile.CustomPosition = randomPosition;
             tile.CustomScale = randomScale;
-            SetTile(tile);
+            SetTile(tile, storeState: true);
         }
         if (tile.OverrideColor)
         {
@@ -158,7 +158,7 @@ public class TilemapStructure : MonoBehaviour
 
             // Update cell in underlying grid
             tile.CustomColor = tile.Color;
-            SetTile(tile);
+            SetTile(tile, storeState: true);
         }
     }
 
@@ -206,18 +206,18 @@ public class TilemapStructure : MonoBehaviour
     /// <summary>
     /// Set type of tile at the given position.
     /// </summary>
-    public void SetTile(int x, int y, int? value, bool updateTilemap = false, bool setDirty = true)
+    public void SetTile(int x, int y, int? value, bool updateTilemap = false, bool setDirty = true, bool storeState = false)
     {
-        _flowGrid.SetCell(x, y, value ?? 0);
+        _flowGrid.SetCell(x, y, value ?? 0, storeState);
         if (setDirty)
             _dirtyCoords.Add(new Vector2Int(x, y));
         if (updateTilemap)
             UpdateTile(x, y);
     }
 
-    public void SetTile(CustomTile tile, bool updateTilemap = false, bool setDirty = true)
+    public void SetTile(CustomTile tile, bool updateTilemap = false, bool setDirty = true, bool storeState = false)
     {
-        _flowGrid.SetCell(tile);
+        _flowGrid.SetCell(tile, storeState);
         if (setDirty)
             _dirtyCoords.Add(new Vector2Int(tile.X, tile.Y));
         if (updateTilemap)
