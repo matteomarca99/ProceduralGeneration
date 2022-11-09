@@ -24,14 +24,14 @@ public class CellularAutomata : AlgorithmBase
                 for (int y = 0; y < tilemap.height; y++)
                 {
                     // Check if the current tile is our target tile
-                    var tile = tilemap.GetTile(x, y);
+                    var tile = tilemap.GetTileType(x, y);
                     if (tile == targetTileId)
                     {
                         // Retrieve all 8 neighbors of our current tile
                         var neighbors = tilemap.GetNeighbors(x, y);
 
                         // Count all the neighbors that are of type target tile
-                        int targetTilesCount = neighbors.Count(a => a.Value == targetTileId);
+                        int targetTilesCount = neighbors.Count(a => a.CellType == targetTileId);
 
                         // If the min alive count is not reached, we replace the tile
                         if (targetTilesCount < MinAlive)
@@ -42,7 +42,7 @@ public class CellularAutomata : AlgorithmBase
                                 // Select the group's key which is the tiletype because thats what we grouped on
                                 // And select the first one (first group's key), because that's the dominant tile type
                                 var dominantTile = neighbors
-                                    .GroupBy(a => a.Value)
+                                    .GroupBy(a => a.CellType)
                                     .OrderByDescending(a => a.Count())
                                     .Select(a => a.Key)
                                     .First();

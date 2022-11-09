@@ -1,20 +1,18 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using Random = UnityEngine.Random;
+using Venomaus.FlowVitae.Grids;
 
 public class TilemapStructure : MonoBehaviour
 {
     [HideInInspector]
     public TileGrid Grid;
 
+    public Grid<int, CustomTile> _flowGrid;
+
     [HideInInspector]
     public int width, height;
 
-    private int[] _tiles;
     private Tilemap _graphicMap;
 
     [SerializeField]
@@ -41,13 +39,11 @@ public class TilemapStructure : MonoBehaviour
 
         // Retrieve the TileGrid component from our parent gameObject
         Grid = transform.parent.GetComponent<TileGrid>();
+        _flowGrid = new Grid<int, CustomTile>(Grid.width, Grid.height);
 
         // Get width and height from parent
         width = Grid.width;
         height = Grid.height;
-
-        // Initialize the one-dimensional array with our map size
-        _tiles = new int[width * height];
 
         // Apply all the algorithms to the tilemap
         foreach (var algorithm in _algorithms)
@@ -74,7 +70,7 @@ public class TilemapStructure : MonoBehaviour
             _dirtyCoords.Remove(coord);
         }
 
-        var typeOfTile = GetTile(x, y);
+        var typeOfTile = GetTileType(x, y);
         // Get the ScriptableObject that matches this type and insert it
         Grid.GetTileCache().TryGetValue(typeOfTile, out TileBase tile); // Default return null if not found
         _graphicMap.SetTile(new Vector3Int(x, y, 0), tile);
@@ -91,7 +87,7 @@ public class TilemapStructure : MonoBehaviour
         var tilesArray = new TileBase[positions.Length];
         for (int i = 0; i < positions.Length; i++)
         {
-            var typeOfTile = GetTile(positions[i].x, positions[i].y);
+            var typeOfTile = GetTileType(positions[i].x, positions[i].y);
             // Get the ScriptableObject that matches this type and insert it
             Grid.GetTileCache().TryGetValue(typeOfTile, out TileBase tile); // Default return null if not found
             positionsArray[i] = new Vector3Int(positions[i].x, positions[i].y, 0);
@@ -123,10 +119,13 @@ public class TilemapStructure : MonoBehaviour
             {
                 positionsArray[x * width + y] = new Vector3Int(x, y, 0);
                 // Get what tile is at this position
-                var typeOfTile = GetTile(x, y);
+                var typeOfTile = GetTileType(x, y);
                 // Get the ScriptableObject that matches this type and insert it
                 Grid.GetTileCache().TryGetValue(typeOfTile, out TileBase tile); // Default return null if not found
                 tilesArray[x * width + y] = tile;
+
+                // Custom logic
+                AdjustTile(GetTile(x, y), positionsArray);
             }
         }
 
@@ -136,35 +135,31 @@ public class TilemapStructure : MonoBehaviour
         _graphicMap.RefreshAllTiles();
     }
 
+    private void AdjustTile(CustomTile tile, Vector3Int[] positionsArray)
+    {
+        if (tile.RandomTransform)
+        {
+            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
+            TilemapHelper.SetTransform(_graphicMap, positionsArray[tile.Y * width + tile.X], TilemapHelper.RandomVector3(tile.MinPosition, tile.MaxPosition), Vector3.zero, TilemapHelper.RandomScaleVector3(tile.MinScale, tile.MaxScale));
+            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockTransform);
+        }
+        if (tile.OverrideColor)
+        {
+            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
+            TilemapHelper.SetColor(_graphicMap, positionsArray[tile.Y * width + tile.X], tile.Color);
+            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockColor);
+        }
+    }
+
     /// <summary>
     /// Returns all 8 neighbors (vertical, horizontal, diagonal)
     /// </summary>
     /// <param name="tileX"></param>
     /// <param name="tileY"></param>
     /// <returns></returns>
-    public List<KeyValuePair<Vector2Int, int>> GetNeighbors(int tileX, int tileY)
+    public IEnumerable<CustomTile> GetNeighbors(int tileX, int tileY)
     {
-        int startX = tileX - 1;
-        int startY = tileY - 1;
-        int endX = tileX + 1;
-        int endY = tileY + 1;
-        var neighbors = new List<KeyValuePair<Vector2Int, int>>();
-        for (int x = startX; x < endX + 1; x++)
-        {
-            for (int y = startY; y < endY + 1; y++)
-            {
-                // We don't need to add the tile we are getting the neighbors of.
-                if (x == tileX && y == tileY) continue;
-                // Check if the tile is within the tilemap, otherwise we don't need to pass it along
-                // As it would be an invalid neighbor
-                if (InBounds(x, y))
-                {
-                    // Pass along a key value pair of the coordinate + the tile type
-                    neighbors.Add(new KeyValuePair<Vector2Int, int>(new Vector2Int(x, y), GetTile(x, y)));
-                }
-            }
-        }
-        return neighbors;
+        return _flowGrid.GetNeighbors(tileX, tileY, AdjacencyRule.EightWay);
     }
 
     /// <summary>
@@ -173,32 +168,28 @@ public class TilemapStructure : MonoBehaviour
     /// <param name="tileX"></param>
     /// <param name="tileY"></param>
     /// <returns></returns>
-    public List<KeyValuePair<Vector2Int, int>> Get4Neighbors(int tileX, int tileY)
+    public IEnumerable<CustomTile> Get4Neighbors(int tileX, int tileY)
     {
-        int startX = tileX - 1;
-        int startY = tileY - 1;
-        int endX = tileX + 1;
-        int endY = tileY + 1;
-        var neighbors = new List<KeyValuePair<Vector2Int, int>>();
-        for (int x = startX; x < endX + 1; x++)
-        {
-            if (x == tileX || !InBounds(x, tileY)) continue;
-            neighbors.Add(new KeyValuePair<Vector2Int, int>(new Vector2Int(x, tileY), GetTile(x, tileY)));
-        }
-        for (int y = startY; y < endY + 1; y++)
-        {
-            if (y == tileY || !InBounds(tileX, y)) continue;
-            neighbors.Add(new KeyValuePair<Vector2Int, int>(new Vector2Int(tileX, y), GetTile(tileX, y)));
-        }
-        return neighbors;
+        return _flowGrid.GetNeighbors(tileX, tileY, AdjacencyRule.FourWay);
     }
 
     /// <summary>
     /// Return type of tile, otherwise 0 if invalid position.
     /// </summary>
-    public int GetTile(int x, int y)
+    public int GetTileType(int x, int y)
     {
-        return InBounds(x, y) ? _tiles[y * width + x] : 0;
+        return _flowGrid.GetCellType(x, y);
+    }
+
+    /// <summary>
+    /// Return underlying tile object
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <returns></returns>
+    public CustomTile GetTile(int x, int y)
+    {
+        return _flowGrid.GetCell(x, y);
     }
 
     /// <summary>
@@ -206,35 +197,11 @@ public class TilemapStructure : MonoBehaviour
     /// </summary>
     public void SetTile(int x, int y, int? value, bool updateTilemap = false, bool setDirty = true)
     {
-        if (InBounds(x, y))
-        {
-            var prev = _tiles[y * width + x];
-            _tiles[y * width + x] = value ?? 0;
-
-            // If tile was changed we can update
-            if (prev != value)
-            {
-                // Add dirty coordinate to list, if modified and it's not yet dirty
-                // Also don't set dirty if we're about to update it too
-                if (!updateTilemap && setDirty)
-                {
-                    var coord = new Vector2Int(x, y);
-                    if (!_dirtyCoords.Contains(coord))
-                        _dirtyCoords.Add(coord);
-                }
-
-                if (updateTilemap)
-                    UpdateTile(x, y);
-            }
-        }
-    }
-
-    /// <summary>
-    /// Check if the tile position is valid.
-    /// </summary>
-    private bool InBounds(int x, int y)
-    {
-        return x >= 0 && x < width && y >= 0 && y < height;
+        _flowGrid.SetCell(x, y, value ?? 0);
+        if (setDirty)
+            _dirtyCoords.Add(new Vector2Int(x, y));
+        if (updateTilemap)
+            UpdateTile(x, y);
     }
 
     /// <summary>

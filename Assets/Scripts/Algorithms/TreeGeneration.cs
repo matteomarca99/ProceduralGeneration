@@ -27,7 +27,7 @@ public class TreeGeneration : AlgorithmBase
             {
                 foreach (var tree in TreeSelection)
                 {
-                    var groundTile = groundTilemap.GetTile(x, y);
+                    var groundTile = groundTilemap.GetTileType(x, y);
                     if (tree.SpawnOnGrounds.Any(tile => (int)tile == groundTile))
                     {
                         // Do a random chance check

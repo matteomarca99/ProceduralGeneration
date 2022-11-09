@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Venomaus.FlowVitae.Cells;
 
-public struct CustomTile
+public class CustomTile : ICell<int>
 {
     private TileBase tile;
     public TileBase Tile { get { return tile; } }
@@ -29,10 +28,15 @@ public struct CustomTile
     private Vector3 maxScale;
     public Vector3 MaxScale { get { return maxScale; } }
 
+    public int X { get; set; }
+    public int Y { get; set; }
+    public int CellType { get; set; }
 
-    public CustomTile(TileBase tile, bool overrideColor, Color color, bool randomTransform, Vector3 minPosition, Vector3 maxPosition, Vector3 minScale, Vector3 maxScale)
+    public CustomTile()
+    { }
+
+    public CustomTile(bool overrideColor, Color color, bool randomTransform, Vector3 minPosition, Vector3 maxPosition, Vector3 minScale, Vector3 maxScale)
     {
-        this.tile = tile;
         this.overrideColor = overrideColor;
         this.color = color;
         this.randomTransform = randomTransform;
@@ -40,5 +44,15 @@ public struct CustomTile
         this.maxPosition = maxPosition;
         this.minScale = minScale;
         this.maxScale = maxScale;
+    }
+
+    public bool Equals(ICell<int> other)
+    {
+        return other != null && other.X == X && other.Y == Y;
+    }
+
+    public bool Equals((int x, int y) other)
+    {
+        return other.x == X && other.y == Y;
     }
 }

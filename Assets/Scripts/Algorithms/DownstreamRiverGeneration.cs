@@ -137,7 +137,7 @@ public class DownstreamRiverGeneration : AlgorithmBase
                 // Here we use a dirty trick to create a nullable struct, so FirstOrDefault can properly return null
                 // Incase we cannot get to a water tile
                 var lowestHeightNeighbor = tilemap.Get4Neighbors(currentPos.x, currentPos.y)
-                    .Select(a => new KeyValuePair<Vector2Int, float>(a.Key, heightmap[a.Key.y * tilemap.width + a.Key.x]))
+                    .Select(a => new KeyValuePair<Vector2Int, float>(new Vector2Int(a.X, a.Y), heightmap[a.Y * tilemap.width + a.X]))
                     .OrderBy(a => a.Value)
                     .Select(a => new KeyValuePair<Vector2Int, float>?(a))
                     .FirstOrDefault(a => !RiverPositions.Contains(a.Value.Key));
@@ -155,7 +155,7 @@ public class DownstreamRiverGeneration : AlgorithmBase
                 RiverPositions.Add(lowestHeightNeighbor.Value.Key);
 
                 // Check if we are done, by checking if the current pos tile is a water tile
-                done = tilemap.GetTile(lowestHeightNeighbor.Value.Key.x, lowestHeightNeighbor.Value.Key.y) == waterTileId;
+                done = tilemap.GetTileType(lowestHeightNeighbor.Value.Key.x, lowestHeightNeighbor.Value.Key.y) == waterTileId;
             }
 
             return done;

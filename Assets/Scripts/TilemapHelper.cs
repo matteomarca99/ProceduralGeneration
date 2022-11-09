@@ -15,7 +15,7 @@ public static class TilemapHelper
         {
             for (int y = 0; y < tilemap.height; y++)
             {
-                var tileType = tilemap.GetTile(x, y);
+                var tileType = tilemap.GetTileType(x, y);
                 // Here we use Any to check if any of the tile types match the current tile
                 if (tileTypes.Any(a => a == tileType))
                 {
@@ -34,7 +34,7 @@ public static class TilemapHelper
         {
             for (int y = 0; y < tilemap.height; y++)
             {
-                if (tilemap.GetTile(x, y) == tileType)
+                if (tilemap.GetTileType(x, y) == tileType)
                 {
                     // Here we check the distance between the start position and the current tile
                     float distance = ((startPos.x - x) * (startPos.x - x) + (startPos.y - y) * (startPos.y - y));
