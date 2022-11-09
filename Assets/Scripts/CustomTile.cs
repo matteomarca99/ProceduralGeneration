@@ -4,9 +4,6 @@ using Venomaus.FlowVitae.Cells;
 
 public class CustomTile : ICell<int>
 {
-    private TileBase tile;
-    public TileBase Tile { get { return tile; } }
-
     private bool overrideColor;
     public bool OverrideColor { get { return overrideColor; } }
 
