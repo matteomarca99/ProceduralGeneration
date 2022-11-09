@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Venomaus.FlowVitae.Cells;
@@ -24,6 +25,11 @@ public class CustomTile : ICell<int>
 
     private Vector3 maxScale;
     public Vector3 MaxScale { get { return maxScale; } }
+
+    // These values can be different per cell
+    public Vector3 CustomPosition { get; set; }
+    public Vector3 CustomScale { get; set; }
+    public Color CustomColor { get; set; }
 
     public int X { get; set; }
     public int Y { get; set; }

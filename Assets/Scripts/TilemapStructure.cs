@@ -140,14 +140,25 @@ public class TilemapStructure : MonoBehaviour
         if (tile.RandomTransform)
         {
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
-            TilemapHelper.SetTransform(_graphicMap, positionsArray[tile.Y * width + tile.X], TilemapHelper.RandomVector3(tile.MinPosition, tile.MaxPosition), Vector3.zero, TilemapHelper.RandomScaleVector3(tile.MinScale, tile.MaxScale));
+            var randomPosition = TilemapHelper.RandomVector3(tile.MinPosition, tile.MaxPosition);
+            var randomScale = TilemapHelper.RandomScaleVector3(tile.MinScale, tile.MaxScale);
+            TilemapHelper.SetTransform(_graphicMap, positionsArray[tile.Y * width + tile.X], randomPosition, Vector3.zero, randomScale);
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockTransform);
+
+            // Update cell in underlying grid
+            tile.CustomPosition = randomPosition;
+            tile.CustomScale = randomScale;
+            _flowGrid.SetCell(tile);
         }
         if (tile.OverrideColor)
         {
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
             TilemapHelper.SetColor(_graphicMap, positionsArray[tile.Y * width + tile.X], tile.Color);
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockColor);
+
+            // Update cell in underlying grid
+            tile.CustomColor = tile.Color;
+            _flowGrid.SetCell(tile);
         }
     }
 
