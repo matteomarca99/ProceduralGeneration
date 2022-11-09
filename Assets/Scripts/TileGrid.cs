@@ -2,6 +2,7 @@ using NaughtyAttributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -40,6 +41,19 @@ public class TileGrid : MonoBehaviour
         foreach (var tilemap in _tilemaps.Values)
         {
             tilemap.Initialize();
+        }
+    }
+
+    public TileTypes.TileData GetTileData(TilemapType type, int tileTypeId)
+    {
+        switch (type)
+        {
+            case TilemapType.Ground:
+                return GroundTileTypes.FirstOrDefault(a => a.TileTypeId == tileTypeId);
+            case TilemapType.Object:
+                return ObjectTileTypes.FirstOrDefault(a => a.TileTypeId == tileTypeId);
+            default:
+                return null;
         }
     }
 

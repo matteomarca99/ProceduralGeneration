@@ -137,11 +137,13 @@ public class TilemapStructure : MonoBehaviour
 
     private void AdjustTile(CustomTile tile, Vector3Int[] positionsArray)
     {
-        if (tile.RandomTransform)
+        var config = Grid.GetTileData(Type, tile.CellType);
+        if (config == null) return;
+        if (config.randomTransform)
         {
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
-            var randomPosition = TilemapHelper.RandomVector3(tile.MinPosition, tile.MaxPosition);
-            var randomScale = TilemapHelper.RandomScaleVector3(tile.MinScale, tile.MaxScale);
+            var randomPosition = TilemapHelper.RandomVector3(config.minPosition, config.maxPosition);
+            var randomScale = TilemapHelper.RandomScaleVector3(config.minScale, config.maxScale);
             TilemapHelper.SetTransform(_graphicMap, positionsArray[tile.Y * width + tile.X], randomPosition, Vector3.zero, randomScale);
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockTransform);
 
@@ -150,14 +152,14 @@ public class TilemapStructure : MonoBehaviour
             tile.CustomScale = randomScale;
             SetTile(tile, storeState: true);
         }
-        if (tile.OverrideColor)
+        if (config.overrideColor)
         {
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
-            TilemapHelper.SetColor(_graphicMap, positionsArray[tile.Y * width + tile.X], tile.Color);
+            TilemapHelper.SetColor(_graphicMap, positionsArray[tile.Y * width + tile.X], config.Color);
             _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockColor);
 
             // Update cell in underlying grid
-            tile.CustomColor = tile.Color;
+            tile.CustomColor = config.Color;
             SetTile(tile, storeState: true);
         }
     }
