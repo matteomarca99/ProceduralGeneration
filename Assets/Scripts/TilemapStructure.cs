@@ -148,7 +148,7 @@ public class TilemapStructure : MonoBehaviour
             // Update cell in underlying grid
             tile.CustomPosition = randomPosition;
             tile.CustomScale = randomScale;
-            _flowGrid.SetCell(tile);
+            SetTile(tile);
         }
         if (tile.OverrideColor)
         {
@@ -158,7 +158,7 @@ public class TilemapStructure : MonoBehaviour
 
             // Update cell in underlying grid
             tile.CustomColor = tile.Color;
-            _flowGrid.SetCell(tile);
+            SetTile(tile);
         }
     }
 
@@ -213,6 +213,15 @@ public class TilemapStructure : MonoBehaviour
             _dirtyCoords.Add(new Vector2Int(x, y));
         if (updateTilemap)
             UpdateTile(x, y);
+    }
+
+    public void SetTile(CustomTile tile, bool updateTilemap = false, bool setDirty = true)
+    {
+        _flowGrid.SetCell(tile);
+        if (setDirty)
+            _dirtyCoords.Add(new Vector2Int(tile.X, tile.Y));
+        if (updateTilemap)
+            UpdateTile(tile.X, tile.Y);
     }
 
     /// <summary>
