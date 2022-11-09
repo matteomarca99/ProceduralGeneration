@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 8dc4a735e28ffeb438630f6150e94b5a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - quadrant_core_display: {instanceID: 0}
+  - quadrant_n_edge_display: {instanceID: 0}
+  - quadrant_s_edge_display: {instanceID: 0}
+  - quadrant_e_edge_display: {instanceID: 0}
+  - quadrant_w_edge_display: {instanceID: 0}
+  - quadrant_nw_corner_display: {instanceID: 0}
+  - quadrant_ne_corner_display: {instanceID: 0}
+  - quadrant_se_corner_display: {instanceID: 0}
+  - quadrant_sw_corner_display: {instanceID: 0}
+  - quadrant_nw_invcorner_display: {instanceID: 0}
+  - quadrant_ne_invcorner_display: {instanceID: 0}
+  - quadrant_se_invcorner_display: {instanceID: 0}
+  - quadrant_sw_invcorner_display: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

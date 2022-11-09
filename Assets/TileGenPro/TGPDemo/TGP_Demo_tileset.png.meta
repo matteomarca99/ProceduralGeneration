@@ -1,0 +1,1735 @@
+fileFormatVersion: 2
+guid: ea39605e41e85c54fa51699ece082cf9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6999614059769920357
+    second: TGP_Demo-00_nw_corner
+  - first:
+      213: 7292161161577577831
+    second: TGP_Demo-01_n_edge
+  - first:
+      213: 1699536417064285544
+    second: TGP_Demo-02_ne_corner
+  - first:
+      213: -2966244363895819136
+    second: TGP_Demo-03_nw_invcorner
+  - first:
+      213: -4266152977557712482
+    second: TGP_Demo-04_ne_invcorner
+  - first:
+      213: 5115059494865800107
+    second: TGP_Demo-05_nw_elbow
+  - first:
+      213: -3398326219762165738
+    second: TGP_Demo-06_ne_elbow
+  - first:
+      213: -3615767891683078685
+    second: TGP_Demo-00b_nw_corner
+  - first:
+      213: 8025434475694593379
+    second: TGP_Demo-07_w_edge
+  - first:
+      213: 1004596060421856347
+    second: TGP_Demo-08_core
+  - first:
+      213: 3491459392952738799
+    second: TGP_Demo-09_e_edge
+  - first:
+      213: 4345637967689207511
+    second: TGP_Demo-10_sw_invcorner
+  - first:
+      213: 4438146144271292899
+    second: TGP_Demo-11_se_invcorner
+  - first:
+      213: -1205730728602275380
+    second: TGP_Demo-12_sw_elbow
+  - first:
+      213: -9051143518171558736
+    second: TGP_Demo-13_se_elbow
+  - first:
+      213: 3062493889669714480
+    second: TGP_Demo-07b_w_edge
+  - first:
+      213: -8655453122109054892
+    second: TGP_Demo-14_sw_corner
+  - first:
+      213: 3620983091272410222
+    second: TGP_Demo-15_se_edge
+  - first:
+      213: -1569816103827724101
+    second: TGP_Demo-16_se_corner
+  - first:
+      213: 7865831278499128338
+    second: TGP_Demo-17_n_end
+  - first:
+      213: 3004837903109511133
+    second: TGP_Demo-18_island
+  - first:
+      213: -4320195923926738449
+    second: TGP_Demo-19_swne_diag
+  - first:
+      213: -3877940017145826791
+    second: TGP_Demo-20_nwse_diag
+  - first:
+      213: 5883740857581213393
+    second: TGP_Demo-14b_sw_corner
+  - first:
+      213: 2453019710790690726
+    second: TGP_Demo-21_et
+  - first:
+      213: -156564031502302137
+    second: TGP_Demo-22_st
+  - first:
+      213: 4523330566682542162
+    second: TGP_Demo-23_w_end
+  - first:
+      213: -5743590153699989886
+    second: TGP_Demo-24_intersection
+  - first:
+      213: -6023257112269159551
+    second: TGP_Demo-25_e_end
+  - first:
+      213: -734376619890870807
+    second: TGP_Demo-26_se_3inv
+  - first:
+      213: 7711230451309119962
+    second: TGP_Demo-27_sw_3inv
+  - first:
+      213: -3028965762629152844
+    second: TGP_Demo-01b_n_edge
+  - first:
+      213: -4428389254146721538
+    second: TGP_Demo-28_nt
+  - first:
+      213: 5382316051246528781
+    second: TGP_Demo-29_wt
+  - first:
+      213: -3841073495939602699
+    second: TGP_Demo-30_ns_bridge
+  - first:
+      213: 5384622567950005238
+    second: TGP_Demo-31_s_end
+  - first:
+      213: 5978971608915615446
+    second: TGP_Demo-32_we_bridge
+  - first:
+      213: 5521846651178971940
+    second: TGP_Demo-33_ne_3inv
+  - first:
+      213: 4630943486627483159
+    second: TGP_Demo-34_nw_3inv
+  - first:
+      213: 987162241862960574
+    second: TGP_Demo-08b_core
+  - first:
+      213: -1547919933487047900
+    second: TGP_Demo-35_e_gun
+  - first:
+      213: 7407497795606549316
+    second: TGP_Demo-36_s_gun
+  - first:
+      213: 3948403045715435444
+    second: TGP_Demo-37_s_invgun
+  - first:
+      213: 3788426366028815266
+    second: TGP_Demo-38_w_invgun
+  - first:
+      213: 6969780549155024512
+    second: TGP_Demo-39_e_thickt
+  - first:
+      213: 1644225174431429065
+    second: TGP_Demo-40_s_thickt
+  - first:
+      213: -6018107384776087179
+    second: TGP_Demo-02b_ne_corner
+  - first:
+      213: 7883896693729434574
+    second: TGP_Demo-15b_s_edge
+  - first:
+      213: -1501072231092581637
+    second: TGP_Demo-41_n_gun
+  - first:
+      213: 1270933510522382814
+    second: TGP_Demo-42_w_gun
+  - first:
+      213: -4316543132252871986
+    second: TGP_Demo-43_e_invgun
+  - first:
+      213: 177218326864026153
+    second: TGP_Demo-44_n_invgun
+  - first:
+      213: -7126710924859309017
+    second: TGP_Demo-45_n_thickt
+  - first:
+      213: -5309061749018804461
+    second: TGP_Demo-46_w_thickt
+  - first:
+      213: 8555969594670361278
+    second: TGP_Demo-09b_e_edge
+  - first:
+      213: -7313809549434894990
+    second: TGP_Demo-08c_core
+  - first:
+      213: 3319010977947354411
+    second: TGP_Demo-03b_nw_invcorner
+  - first:
+      213: -9188681511355355704
+    second: TGP_Demo-04b_ne_invcorner
+  - first:
+      213: -4914578798610981806
+    second: TGP_Demo-10b_sw_invcorner
+  - first:
+      213: -7881571525473091813
+    second: TGP_Demo-11b_se_invcorner
+  - first:
+      213: 7320510993203766072
+    second: TGP_Demo-08f_core
+  - first:
+      213: 8577602930673834095
+    second: TGP_Demo-08e_core
+  - first:
+      213: 4396615351495373492
+    second: TGP_Demo-16b_se_corner
+  - first:
+      213: 1672702527447118367
+    second: TGP_Demo-08d_core
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TGP_Demo-00_nw_corner
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b7a6dd6ef932160800000000000000
+      internalID: 6999614059769920357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-01_n_edge
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d3bb0e0f5f23560800000000000000
+      internalID: 7292161161577577831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-02_ne_corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865f4f5ed57f59710800000000000000
+      internalID: 1699536417064285544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-03_nw_invcorner
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0843cf48778c5d6d0800000000000000
+      internalID: -2966244363895819136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-04_ne_invcorner
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91923f48749bc4c0800000000000000
+      internalID: -4266152977557712482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-05_nw_elbow
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab077482875cf640800000000000000
+      internalID: 5115059494865800107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-06_ne_elbow
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6181e28ee48b6d0d0800000000000000
+      internalID: -3398326219762165738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-00b_nw_corner
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed87f9724632ddc0800000000000000
+      internalID: -3615767891683078685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-07_w_edge
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36513f39222106f60800000000000000
+      internalID: 8025434475694593379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08_core
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c933c5bca01fd00800000000000000
+      internalID: 1004596060421856347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-09_e_edge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe326a0c1d7247030800000000000000
+      internalID: 3491459392952738799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-10_sw_invcorner
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dec09a15bece4c30800000000000000
+      internalID: 4345637967689207511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-11_se_invcorner
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e95f866766779d30800000000000000
+      internalID: 4438146144271292899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-12_sw_elbow
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc173e26a42644fe0800000000000000
+      internalID: -1205730728602275380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-13_se_elbow
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc0e4cdce0e36280800000000000000
+      internalID: -9051143518171558736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-07b_w_edge
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032519487f9208a20800000000000000
+      internalID: 3062493889669714480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-14_sw_corner
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450e4a67e37a1e780800000000000000
+      internalID: -8655453122109054892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-15_se_edge
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64ecfccfe0504230800000000000000
+      internalID: 3620983091272410222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-16_se_corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb829a02294e63ae0800000000000000
+      internalID: -1569816103827724101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-17_n_end
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214e8127fdb092d60800000000000000
+      internalID: 7865831278499128338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-18_island
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7d87e072453b920800000000000000
+      internalID: 3004837903109511133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-19_swne_diag
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9914252b49b04c0800000000000000
+      internalID: -4320195923926738449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-20_nwse_diag
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91230c1c91ace2ac0800000000000000
+      internalID: -3877940017145826791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-14b_sw_corner
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d69496f22f37a150800000000000000
+      internalID: 5883740857581213393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-21_et
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7e5b82e60ea0220800000000000000
+      internalID: 2453019710790690726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-22_st
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744c3b5c7d5c3ddf0800000000000000
+      internalID: -156564031502302137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-23_w_end
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25087cc4f2916ce30800000000000000
+      internalID: 4523330566682542162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-24_intersection
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286e741af2baa40b0800000000000000
+      internalID: -5743590153699989886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-25_e_end
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1830a58a197196ca0800000000000000
+      internalID: -6023257112269159551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-26_se_3inv
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e57d08ea58fec5f0800000000000000
+      internalID: -734376619890870807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-27_sw_3inv
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad984775d3bc30b60800000000000000
+      internalID: 7711230451309119962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-01b_n_edge
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf4ba1efa3f6f5d0800000000000000
+      internalID: -3028965762629152844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-28_nt
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef87d6b9f633b82c0800000000000000
+      internalID: -4428389254146721538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-29_wt
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09be6f8ee3d1ba40800000000000000
+      internalID: 5382316051246528781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-30_ns_bridge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f62a5e9104c1bac0800000000000000
+      internalID: -3841073495939602699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-31_s_end
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3363452b50aba40800000000000000
+      internalID: 5384622567950005238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-32_we_bridge
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de9f87100399f250800000000000000
+      internalID: 5978971608915615446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-33_ne_3inv
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423f3b3f54a81ac40800000000000000
+      internalID: 5521846651178971940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-34_nw_3inv
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e0757b09a644040800000000000000
+      internalID: 4630943486627483159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08b_core
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb58be924da13bd00800000000000000
+      internalID: 987162241862960574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-35_e_gun
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b12cf850fa48ae0800000000000000
+      internalID: -1547919933487047900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-36_s_gun
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4431e9d9ff7bcc660800000000000000
+      internalID: 7407497795606549316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-37_s_invgun
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf50f986ab8bc630800000000000000
+      internalID: 3948403045715435444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-38_w_invgun
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab1fdc35b1339430800000000000000
+      internalID: 3788426366028815266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-39_e_thickt
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08eefc26b72a9b060800000000000000
+      internalID: 6969780549155024512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-40_s_thickt
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c17dbca51671d610800000000000000
+      internalID: 1644225174431429065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-02b_ne_corner
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579244608336b7ca0800000000000000
+      internalID: -6018107384776087179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-15b_s_edge
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb9e93b54a396d60800000000000000
+      internalID: 7883896693729434574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-41_n_gun
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa068342ce1b2be0800000000000000
+      internalID: -1501072231092581637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-42_w_gun
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9a3db4b4343a110800000000000000
+      internalID: 1270933510522382814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-43_e_invgun
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec26a6824ee8814c0800000000000000
+      internalID: -4316543132252871986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-44_n_invgun
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a5b6c112b957200800000000000000
+      internalID: 177218326864026153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-45_n_thickt
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7248dda3c26d81d90800000000000000
+      internalID: -7126710924859309017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-46_w_thickt
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fbe17c77c6256b0800000000000000
+      internalID: -5309061749018804461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-09b_e_edge
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaae5fc309ecb670800000000000000
+      internalID: 8555969594670361278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08c_core
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275c21b07f0208a90800000000000000
+      internalID: -7313809549434894990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-03b_nw_invcorner
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b258c2a46ee7f0e20800000000000000
+      internalID: 3319010977947354411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-04b_ne_invcorner
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cde67169de3b7080800000000000000
+      internalID: -9188681511355355704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-10b_sw_invcorner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c50280f98ebcbb0800000000000000
+      internalID: -4914578798610981806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-11b_se_invcorner
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fb758b4780f9290800000000000000
+      internalID: -7881571525473091813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08f_core
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833a04c66fda79560800000000000000
+      internalID: 7320510993203766072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08e_core
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68d92b5b64c90770800000000000000
+      internalID: 8577602930673834095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-16b_se_corner
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b239ef2e5ae30d30800000000000000
+      internalID: 4396615351495373492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TGP_Demo-08d_core
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12326b1612a63710800000000000000
+      internalID: 1672702527447118367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TGP_Demo-22_st: -156564031502302137
+      TGP_Demo-16_se_corner: -1569816103827724101
+      TGP_Demo-03b_nw_invcorner: 3319010977947354411
+      TGP_Demo-31_s_end: 5384622567950005238
+      TGP_Demo-43_e_invgun: -4316543132252871986
+      TGP_Demo-08f_core: 7320510993203766072
+      TGP_Demo-04b_ne_invcorner: -9188681511355355704
+      TGP_Demo-03_nw_invcorner: -2966244363895819136
+      TGP_Demo-11b_se_invcorner: -7881571525473091813
+      TGP_Demo-01b_n_edge: -3028965762629152844
+      TGP_Demo-24_intersection: -5743590153699989886
+      TGP_Demo-00b_nw_corner: -3615767891683078685
+      TGP_Demo-30_ns_bridge: -3841073495939602699
+      TGP_Demo-07b_w_edge: 3062493889669714480
+      TGP_Demo-41_n_gun: -1501072231092581637
+      TGP_Demo-29_wt: 5382316051246528781
+      TGP_Demo-40_s_thickt: 1644225174431429065
+      TGP_Demo-39_e_thickt: 6969780549155024512
+      TGP_Demo-08d_core: 1672702527447118367
+      TGP_Demo-08_core: 1004596060421856347
+      TGP_Demo-25_e_end: -6023257112269159551
+      TGP_Demo-05_nw_elbow: 5115059494865800107
+      TGP_Demo-15b_s_edge: 7883896693729434574
+      TGP_Demo-20_nwse_diag: -3877940017145826791
+      TGP_Demo-15_se_edge: 3620983091272410222
+      TGP_Demo-13_se_elbow: -9051143518171558736
+      TGP_Demo-33_ne_3inv: 5521846651178971940
+      TGP_Demo-37_s_invgun: 3948403045715435444
+      TGP_Demo-34_nw_3inv: 4630943486627483159
+      TGP_Demo-08b_core: 987162241862960574
+      TGP_Demo-02b_ne_corner: -6018107384776087179
+      TGP_Demo-23_w_end: 4523330566682542162
+      TGP_Demo-44_n_invgun: 177218326864026153
+      TGP_Demo-10b_sw_invcorner: -4914578798610981806
+      TGP_Demo-06_ne_elbow: -3398326219762165738
+      TGP_Demo-07_w_edge: 8025434475694593379
+      TGP_Demo-18_island: 3004837903109511133
+      TGP_Demo-45_n_thickt: -7126710924859309017
+      TGP_Demo-38_w_invgun: 3788426366028815266
+      TGP_Demo-36_s_gun: 7407497795606549316
+      TGP_Demo-09b_e_edge: 8555969594670361278
+      TGP_Demo-10_sw_invcorner: 4345637967689207511
+      TGP_Demo-19_swne_diag: -4320195923926738449
+      TGP_Demo-00_nw_corner: 6999614059769920357
+      TGP_Demo-27_sw_3inv: 7711230451309119962
+      TGP_Demo-26_se_3inv: -734376619890870807
+      TGP_Demo-42_w_gun: 1270933510522382814
+      TGP_Demo-14_sw_corner: -8655453122109054892
+      TGP_Demo-46_w_thickt: -5309061749018804461
+      TGP_Demo-04_ne_invcorner: -4266152977557712482
+      TGP_Demo-08c_core: -7313809549434894990
+      TGP_Demo-02_ne_corner: 1699536417064285544
+      TGP_Demo-16b_se_corner: 4396615351495373492
+      TGP_Demo-21_et: 2453019710790690726
+      TGP_Demo-32_we_bridge: 5978971608915615446
+      TGP_Demo-35_e_gun: -1547919933487047900
+      TGP_Demo-09_e_edge: 3491459392952738799
+      TGP_Demo-11_se_invcorner: 4438146144271292899
+      TGP_Demo-01_n_edge: 7292161161577577831
+      TGP_Demo-28_nt: -4428389254146721538
+      TGP_Demo-17_n_end: 7865831278499128338
+      TGP_Demo-14b_sw_corner: 5883740857581213393
+      TGP_Demo-08e_core: 8577602930673834095
+      TGP_Demo-12_sw_elbow: -1205730728602275380
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
