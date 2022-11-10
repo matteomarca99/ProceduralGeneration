@@ -109,45 +109,40 @@ public class TilemapStructure : MonoBehaviour
     /// </summary>
     public void UpdateTiles()
     {
-        // Create a positions array and tile array required by _graphicMap.SetTiles
-        var positionsArray = new Vector3Int[width * height];
-        var tilesArray = new TileBase[width * height];
         // Loop over all our tiles in our data structure
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                positionsArray[x * width + y] = new Vector3Int(x, y, 0);
                 // Get what tile is at this position
                 var typeOfTile = GetTileType(x, y);
                 // Get the ScriptableObject that matches this type and insert it
                 Grid.GetTileCache().TryGetValue(typeOfTile, out TileBase tile); // Default return null if not found
-                tilesArray[x * width + y] = tile;
 
+                // Set tile graphic
                 _graphicMap.SetTile(new Vector3Int(x, y), tile);
-                // Custom logic
-                AdjustTile(GetTile(x, y), positionsArray);
+
+                // Manipulate tile
+                AdjustTile(GetTile(x, y));
             }
         }
 
         // Clear all dirty coordinates
         _dirtyCoords.Clear();
-        //_graphicMap.SetTiles(positionsArray, tilesArray);
-        //_graphicMap.RefreshAllTiles();
     }
 
-    private void AdjustTile(CustomTile tile, Vector3Int[] positionsArray)
+    private void AdjustTile(CustomTile tile)
     {
         var config = Grid.GetTileData(Type, tile.CellType);
         if (config == null) return;
         if (config.randomTransform)
         {
-
-            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
+            var pos = new Vector3Int(tile.X, tile.Y, 0);
+            _graphicMap.SetTileFlags(pos, TileFlags.None);
             var randomPosition = TilemapHelper.RandomVector3(config.minPosition, config.maxPosition);
             var randomScale = TilemapHelper.RandomScaleVector3(config.minScale, config.maxScale);
-            TilemapHelper.SetTransform(_graphicMap, positionsArray[tile.Y * width + tile.X], randomPosition, Vector3.zero, randomScale);
-            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockTransform);
+            TilemapHelper.SetTransform(_graphicMap, pos, randomPosition, Vector3.zero, randomScale);
+            _graphicMap.SetTileFlags(pos, TileFlags.LockTransform);
 
             // Update cell in underlying grid
             tile.CustomPosition = randomPosition;
@@ -156,9 +151,10 @@ public class TilemapStructure : MonoBehaviour
         }
         if (config.overrideColor)
         {
-            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.None);
-            TilemapHelper.SetColor(_graphicMap, positionsArray[tile.Y * width + tile.X], config.Color);
-            _graphicMap.SetTileFlags(positionsArray[tile.Y * width + tile.X], TileFlags.LockColor);
+            var pos = new Vector3Int(tile.X, tile.Y, 0);
+            _graphicMap.SetTileFlags(pos, TileFlags.None);
+            TilemapHelper.SetColor(_graphicMap, pos, config.Color);
+            _graphicMap.SetTileFlags(pos, TileFlags.LockColor);
 
             // Update cell in underlying grid
             tile.CustomColor = config.Color;
