@@ -1,44 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Venomaus.FlowVitae.Cells;
 
-public struct CustomTile
+public class CustomTile : ICell<int>
 {
-    private TileBase tile;
-    public TileBase Tile { get { return tile; } }
+    // These values can be different per cell
+    public Vector3 CustomPosition { get; set; }
+    public Vector3 CustomScale { get; set; }
+    public Color CustomColor { get; set; }
 
-    private bool overrideColor;
-    public bool OverrideColor { get { return overrideColor; } }
+    public int X { get; set; }
+    public int Y { get; set; }
+    public int CellType { get; set; }
 
-    private Color color;
-    public Color Color { get { return color; } }
+    public CustomTile()
+    { }
 
-    private bool randomTransform;
-    public bool RandomTransform { get { return randomTransform; } }
-
-    private Vector3 minPosition;
-    public Vector3 MinPosition { get { return minPosition; } }
-
-    private Vector3 maxPosition;
-    public Vector3 MaxPosition { get { return maxPosition; } }
-
-    private Vector3 minScale;
-    public Vector3 MinScale { get { return minScale; } }
-
-    private Vector3 maxScale;
-    public Vector3 MaxScale { get { return maxScale; } }
-
-
-    public CustomTile(TileBase tile, bool overrideColor, Color color, bool randomTransform, Vector3 minPosition, Vector3 maxPosition, Vector3 minScale, Vector3 maxScale)
+    public bool Equals(ICell<int> other)
     {
-        this.tile = tile;
-        this.overrideColor = overrideColor;
-        this.color = color;
-        this.randomTransform = randomTransform;
-        this.minPosition = minPosition;
-        this.maxPosition = maxPosition;
-        this.minScale = minScale;
-        this.maxScale = maxScale;
+        return other != null && other.X == X && other.Y == Y;
+    }
+
+    public bool Equals((int x, int y) other)
+    {
+        return other.x == X && other.y == Y;
     }
 }
