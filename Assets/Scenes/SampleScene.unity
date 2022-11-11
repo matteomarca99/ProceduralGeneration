@@ -751,27 +751,27 @@ Tilemap:
       e33: 0
   - m_RefCount: 0
     m_Data:
-      e00: -2.2035562e-16
+      e00: 3.910013e+9
       e01: 0
-      e02: -8.081546e-39
-      e03: -8.081546e-39
-      e10: 8.32e-43
+      e02: 1.8295932e-19
+      e03: 1.8295932e-19
+      e10: 8.28e-43
       e11: 0
-      e12: 8.32e-43
-      e13: 8.32e-43
-      e20: -5.6966154e-11
+      e12: 8.28e-43
+      e13: 8.28e-43
+      e20: -6.726091e+35
       e21: 1e-45
-      e22: 7.7917203e-29
-      e23: 8.700871e+9
+      e22: -2.1131001e-19
+      e23: -3.8811107e+19
       e30: 4.5905e-41
       e31: 0
-      e32: 8.34e-43
-      e33: 8.37e-43
+      e32: 8.28e-43
+      e33: 8.31e-43
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: 3.429e-41, g: 3.429e-41, b: 3.429e-41, a: 3.429e-41}
   - m_RefCount: 0
-    m_Data: {r: 4.415e-41, g: 4.415e-41, b: 4.415e-41, a: 4.415e-41}
+    m_Data: {r: 3.4738e-41, g: 3.4738e-41, b: 3.4738e-41, a: 3.4738e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1006,53 +1006,113 @@ MonoBehaviour:
   Seed: 2147483647
   GroundTileTypes:
   - Sprite: {fileID: 0}
-    Color: {r: 0, g: 0.21023417, b: 1, a: 1}
+    Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     Tile: {fileID: 11400000, guid: 9ede98f247e62c24990221e08f406d37, type: 2}
     ColliderType: 2
+    overrideColor: 1
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 1
   - Sprite: {fileID: 0}
     Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
     Tile: {fileID: 11400000, guid: a08a4ca56f213a345a536de2a1a299f4, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 2
   - Sprite: {fileID: 0}
     Color: {r: 0.9433962, g: 0.8965609, b: 0, a: 1}
     Tile: {fileID: 11400000, guid: 5900125dbec67d740b392d221ae861af, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 3
   - Sprite: {fileID: 0}
     Color: {r: 0.044143807, g: 0.3773585, b: 0.07997331, a: 0}
     Tile: {fileID: 11400000, guid: 68846ed0f7fec7a47877d94297121856, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 4
   - Sprite: {fileID: 0}
     Color: {r: 0.3679245, g: 0.16018598, b: 0.011801328, a: 0}
     Tile: {fileID: 11400000, guid: cb9915d1db2e49c408315b49c8373abb, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 5
   - Sprite: {fileID: 0}
     Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0}
     Tile: {fileID: 0}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 6
   - Sprite: {fileID: 0}
     Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}
     Tile: {fileID: 0}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 7
   - Sprite: {fileID: 0}
     Color: {r: 0.4300179, g: 0.40498397, b: 0.9056604, a: 0}
     Tile: {fileID: 0}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 8
   ObjectTileTypes:
   - Sprite: {fileID: 0}
     Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
     Tile: {fileID: 11400000, guid: 2f28b5ba85e1fec4a90766e515e2bd0f, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 1
+    minPosition: {x: -0.3, y: 0, z: 0}
+    maxPosition: {x: 0.3, y: 0.5, z: 0}
+    minScale: {x: 1, y: 1, z: 1}
+    maxScale: {x: 1, y: 1, z: 1}
     TileType: 2001
   - Sprite: {fileID: 0}
     Color: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 1}
     Tile: {fileID: 11400000, guid: bd85a3256ccd1074fb39807231112b0d, type: 2}
     ColliderType: 0
+    overrideColor: 0
+    randomTransform: 0
+    minPosition: {x: 0, y: 0, z: 0}
+    maxPosition: {x: 0, y: 0, z: 0}
+    minScale: {x: 0, y: 0, z: 0}
+    maxScale: {x: 0, y: 0, z: 0}
     TileType: 2002

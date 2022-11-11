@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using System.Linq;
 
 public class TileGenProWindow : EditorWindow
 {
@@ -27,6 +28,7 @@ public class TileGenProWindow : EditorWindow
     static string tilesetName;
     static string pathToGet = "";//This is the path starting from Assets/ with the tileset name and format.
     string pathNoFileNameOrFormat;//This is the path starting from Assets/ without the tileset name and format.
+    public RuleTile createAdvancedRuleTile = null;
     bool extraTiles = true;
 
     List<Sprite> spriteList;
@@ -597,6 +599,11 @@ public class TileGenProWindow : EditorWindow
         }
 
         TryDrawQuadrantTextures();
+        GUILayout.Space(5);
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Use AvancedRuleTile", EditorStyles.boldLabel);
+        createAdvancedRuleTile = (RuleTile)EditorGUILayout.ObjectField(createAdvancedRuleTile, typeof(RuleTile), false);
+        GUILayout.EndHorizontal();
         GUILayout.BeginHorizontal();
         GUILayout.Label("Generate tile variations", EditorStyles.boldLabel);
         extraTiles = EditorGUILayout.Toggle(extraTiles);
@@ -965,7 +972,12 @@ public class TileGenProWindow : EditorWindow
     {
         Debug.Log("Creating Rule tile.");
 
-        RuleTile rTile = ScriptableObject.CreateInstance("RuleTile") as RuleTile;
+        RuleTile rTile;
+
+        if (createAdvancedRuleTile == null)
+            rTile = ScriptableObject.CreateInstance("RuleTile") as RuleTile;
+        else
+            rTile = ScriptableObject.CreateInstance("AdvancedRuleTile") as AdvancedRuleTile;
 
         AssetDatabase.CreateAsset(rTile, pathNoFileNameOrFormat + tilesetName + "_ruletile.asset");
 
@@ -976,6 +988,23 @@ public class TileGenProWindow : EditorWindow
 
         //Default tile is tile 14, which is the core tile.
         rTile.m_DefaultSprite = spriteList[14];
+
+
+        // Add rules from selected rule tile (if selected)
+        if(createAdvancedRuleTile != null)
+        {
+            List<RuleTile.TilingRule> rules = createAdvancedRuleTile.m_TilingRules;
+            foreach (RuleTile.TilingRule rule in rules)
+            {
+                for (int i = 0; i < rule.m_Neighbors.Count; i++)
+                {
+                    // Replace all 1(GREEN) with 4(SPECIFIED)
+                    if (rule.m_Neighbors[i] == 1)
+                        rule.m_Neighbors[i] = 4;
+                }
+                rTile.m_TilingRules.Add(rule);
+            }
+        }
 
 
         #region rules
